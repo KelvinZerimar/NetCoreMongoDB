@@ -1,0 +1,11 @@
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Console.Sales.Infra.Data\bin\Debug\netcoreapp3.1\Controle.Sales.Infra.Data.deps.json
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Console.Sales.Infra.Data\bin\Debug\netcoreapp3.1\Controle.Sales.Infra.Data.dll
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Console.Sales.Infra.Data\bin\Debug\netcoreapp3.1\Controle.Sales.Infra.Data.pdb
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Console.Sales.Infra.Data\bin\Debug\netcoreapp3.1\Controle.Sales.Domain.dll
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Console.Sales.Infra.Data\bin\Debug\netcoreapp3.1\Controle.Sales.Domain.pdb
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Console.Sales.Infra.Data\obj\Debug\netcoreapp3.1\Controle.Sales.Infra.Data.csprojAssemblyReference.cache
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Console.Sales.Infra.Data\obj\Debug\netcoreapp3.1\Controle.Sales.Infra.Data.AssemblyInfoInputs.cache
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Console.Sales.Infra.Data\obj\Debug\netcoreapp3.1\Controle.Sales.Infra.Data.AssemblyInfo.cs
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Console.Sales.Infra.Data\obj\Debug\netcoreapp3.1\Controle.Sales.Infra.Data.csproj.CopyComplete
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Console.Sales.Infra.Data\obj\Debug\netcoreapp3.1\Controle.Sales.Infra.Data.dll
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Console.Sales.Infra.Data\obj\Debug\netcoreapp3.1\Controle.Sales.Infra.Data.pdb

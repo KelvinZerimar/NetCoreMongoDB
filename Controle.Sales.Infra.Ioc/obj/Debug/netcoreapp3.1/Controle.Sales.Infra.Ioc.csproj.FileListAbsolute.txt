@@ -1,0 +1,17 @@
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.Infra.Ioc\bin\Debug\netcoreapp3.1\Controle.Sales.Infra.Ioc.deps.json
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.Infra.Ioc\bin\Debug\netcoreapp3.1\Controle.Sales.Infra.Ioc.dll
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.Infra.Ioc\bin\Debug\netcoreapp3.1\Controle.Sales.Infra.Ioc.pdb
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.Infra.Ioc\bin\Debug\netcoreapp3.1\Controle.Sales.Application.dll
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.Infra.Ioc\bin\Debug\netcoreapp3.1\Controle.Sales.Domain.dll
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.Infra.Ioc\bin\Debug\netcoreapp3.1\Controle.Sales.Infra.Crosscuting.dll
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.Infra.Ioc\bin\Debug\netcoreapp3.1\Controle.Sales.Infra.Data.dll
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.Infra.Ioc\bin\Debug\netcoreapp3.1\Controle.Sales.Infra.Data.pdb
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.Infra.Ioc\bin\Debug\netcoreapp3.1\Controle.Sales.Application.pdb
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.Infra.Ioc\bin\Debug\netcoreapp3.1\Controle.Sales.Domain.pdb
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.Infra.Ioc\bin\Debug\netcoreapp3.1\Controle.Sales.Infra.Crosscuting.pdb
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.Infra.Ioc\obj\Debug\netcoreapp3.1\Controle.Sales.Infra.Ioc.csprojAssemblyReference.cache
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.Infra.Ioc\obj\Debug\netcoreapp3.1\Controle.Sales.Infra.Ioc.AssemblyInfoInputs.cache
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.Infra.Ioc\obj\Debug\netcoreapp3.1\Controle.Sales.Infra.Ioc.AssemblyInfo.cs
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.Infra.Ioc\obj\Debug\netcoreapp3.1\Controle.Sales.Infra.Ioc.csproj.CopyComplete
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.Infra.Ioc\obj\Debug\netcoreapp3.1\Controle.Sales.Infra.Ioc.dll
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.Infra.Ioc\obj\Debug\netcoreapp3.1\Controle.Sales.Infra.Ioc.pdb

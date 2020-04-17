@@ -1,0 +1,32 @@
+<h1 id="tableLabel">Sales by Countrys</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+<p *ngIf="!sales"><em>Loading...</em></p>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="sales">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>REGION </th>
+      <th>COUNTRY</th>
+      <th>ITEM TYPE</th>
+      <th>SALES CHANNEL</th>
+      <th>ORDER DATE</th>
+      <th>UNITS SOLD</th>
+      <th>UNIT PRICE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let sale of sales">
+      <td>{{ sale.id }}</td>
+      <td>{{ sale.region }}</td>
+      <td>{{ sale.country }}</td>
+      <td>{{ sale.item_Type }}</td>
+      <td>{{ sale.sales_Channel }}</td>
+      <td>{{ sale.order_Date }}</td>
+      <td>{{ sale.units_Sold }}</td>
+      <td>{{ sale.unit_Price }}</td>
+    </tr>
+  </tbody>
+</table>

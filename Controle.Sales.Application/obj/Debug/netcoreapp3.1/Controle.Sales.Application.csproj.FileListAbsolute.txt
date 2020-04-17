@@ -1,0 +1,13 @@
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.Application\bin\Debug\netcoreapp3.1\Controle.Sales.Application.deps.json
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.Application\bin\Debug\netcoreapp3.1\Controle.Sales.Application.dll
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.Application\bin\Debug\netcoreapp3.1\Controle.Sales.Application.pdb
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.Application\bin\Debug\netcoreapp3.1\Controle.Sales.Domain.dll
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.Application\bin\Debug\netcoreapp3.1\Controle.Sales.Infra.Crosscuting.dll
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.Application\bin\Debug\netcoreapp3.1\Controle.Sales.Domain.pdb
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.Application\bin\Debug\netcoreapp3.1\Controle.Sales.Infra.Crosscuting.pdb
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.Application\obj\Debug\netcoreapp3.1\Controle.Sales.Application.csprojAssemblyReference.cache
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.Application\obj\Debug\netcoreapp3.1\Controle.Sales.Application.AssemblyInfoInputs.cache
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.Application\obj\Debug\netcoreapp3.1\Controle.Sales.Application.AssemblyInfo.cs
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.Application\obj\Debug\netcoreapp3.1\Controle.Sales.Application.csproj.CopyComplete
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.Application\obj\Debug\netcoreapp3.1\Controle.Sales.Application.dll
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.Application\obj\Debug\netcoreapp3.1\Controle.Sales.Application.pdb
