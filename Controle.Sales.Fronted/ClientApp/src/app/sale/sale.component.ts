@@ -9,9 +9,12 @@ import { Router } from '@angular/router';
 export class SaleComponent implements OnInit {
   sales;
 
-  constructor(private router: Router, private service: SaleService) { }
+  constructor(private router: Router, private service: SaleService) {
+    console.log('1.- Constructor ...')
+  }
 
   ngOnInit() {
+    console.log('2.- ngOnInit ...')
     this.service.getListValues().subscribe(
       result => {
         this.sales = result;

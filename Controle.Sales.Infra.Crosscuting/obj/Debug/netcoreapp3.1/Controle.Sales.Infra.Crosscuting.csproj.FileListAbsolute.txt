@@ -5,3 +5,4 @@ C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.Infra.Crossc
 C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.Infra.Crosscuting\obj\Debug\netcoreapp3.1\Controle.Sales.Infra.Crosscuting.AssemblyInfo.cs
 C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.Infra.Crosscuting\obj\Debug\netcoreapp3.1\Controle.Sales.Infra.Crosscuting.dll
 C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.Infra.Crosscuting\obj\Debug\netcoreapp3.1\Controle.Sales.Infra.Crosscuting.pdb
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.Infra.Crosscuting\obj\Debug\netcoreapp3.1\Controle.Sales.Infra.Crosscuting.csprojAssemblyReference.cache

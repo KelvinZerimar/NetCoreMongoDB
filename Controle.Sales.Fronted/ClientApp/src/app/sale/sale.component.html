@@ -1,25 +1,23 @@
-<h1 id="tableLabel">Sales by Countrys</h1>
+<h1 id="tableLabel" class="animated fadeIn fast">Sales by Countrys</h1>
 <p>This component demonstrates fetching data from the server.</p>
 <p *ngIf="!sales"><em>Loading...</em></p>
 <table class="table table-hover">
   <thead class="thead-light">
     <tr>
-      <th>ID</th>
-      <th>REGION </th>
-      <th>COUNTRY</th>
-      <th>ITEM TYPE</th>
-      <th>SALES CHANNEL</th>
-      <th>ORDER DATE</th>
-      <th>UNITS SOLD</th>
-      <th>UNIT PRICE</th>
+      <th>Region</th>
+      <th>Country</th>
+      <th>Item Type</th>
+      <th>Sales Channel</th>
+      <th>Order Date</th>
+      <th>Units Sold</th>
+      <th>Unit Price</th>
       <th>
         <a class="btn btn-outline-success" routerLink="/order"><i class="fa fa-plus-square"></i> Create New</a>
       </th>
     </tr>
   </thead>
-  <tbody>
+  <tbody class="animated fadeIn">
     <tr *ngFor="let sale of sales">
-      <td>{{ sale.id }}</td>
       <td>{{ sale.region }}</td>
       <td>{{ sale.country }}</td>
       <td>{{ sale.item_Type }}</td>

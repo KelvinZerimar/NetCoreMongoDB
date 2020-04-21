@@ -5,3 +5,4 @@ C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.Domain\obj\D
 C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.Domain\obj\Debug\netcoreapp3.1\Controle.Sales.Domain.AssemblyInfo.cs
 C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.Domain\obj\Debug\netcoreapp3.1\Controle.Sales.Domain.dll
 C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.Domain\obj\Debug\netcoreapp3.1\Controle.Sales.Domain.pdb
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.Domain\obj\Debug\netcoreapp3.1\Controle.Sales.Domain.csprojAssemblyReference.cache
