@@ -1,3 +1,7 @@
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.API\obj\Debug\netcoreapp3.1\Controle.Sales.API.csprojAssemblyReference.cache
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.API\obj\Debug\netcoreapp3.1\Controle.Sales.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.API\obj\Debug\netcoreapp3.1\Controle.Sales.API.AssemblyInfoInputs.cache
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.API\obj\Debug\netcoreapp3.1\Controle.Sales.API.AssemblyInfo.cs
 C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.API\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.API\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.API\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -114,10 +118,7 @@ C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.API\bin\Debu
 C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.API\bin\Debug\netcoreapp3.1\Controle.Sales.Domain.pdb
 C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.API\bin\Debug\netcoreapp3.1\Controle.Sales.Infra.Crosscuting.pdb
 C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.API\bin\Debug\netcoreapp3.1\Controle.Sales.Infra.Data.pdb
-C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.API\obj\Debug\netcoreapp3.1\Controle.Sales.API.csprojAssemblyReference.cache
-C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.API\obj\Debug\netcoreapp3.1\Controle.Sales.API.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.API\obj\Debug\netcoreapp3.1\Controle.Sales.API.AssemblyInfoInputs.cache
-C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.API\obj\Debug\netcoreapp3.1\Controle.Sales.API.AssemblyInfo.cs
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.API\obj\Debug\netcoreapp3.1\Controle.Sales.API.csproj.CoreCompileInputs.cache
 C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.API\obj\Debug\netcoreapp3.1\Controle.Sales.API.RazorTargetAssemblyInfo.cache
 C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.API\obj\Debug\netcoreapp3.1\Controle.Sales.API.csproj.CopyComplete
 C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.API\obj\Debug\netcoreapp3.1\staticwebassets\Controle.Sales.API.StaticWebAssets.Manifest.cache

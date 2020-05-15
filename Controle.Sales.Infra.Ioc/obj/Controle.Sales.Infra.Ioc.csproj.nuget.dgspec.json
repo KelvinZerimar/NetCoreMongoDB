@@ -4,14 +4,14 @@
     "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Infra.Ioc\\Controle.Sales.Infra.Ioc.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Console.Sales.Infra.Data\\Controle.Sales.Infra.Data.csproj": {
+    "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Application\\Controle.Sales.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Console.Sales.Infra.Data\\Controle.Sales.Infra.Data.csproj",
-        "projectName": "Controle.Sales.Infra.Data",
-        "projectPath": "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Console.Sales.Infra.Data\\Controle.Sales.Infra.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Application\\Controle.Sales.Application.csproj",
+        "projectName": "Controle.Sales.Application",
+        "projectPath": "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Application\\Controle.Sales.Application.csproj",
         "packagesPath": "C:\\Users\\Ramirez\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Console.Sales.Infra.Data\\obj\\",
+        "outputPath": "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -27,8 +27,197 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.telerik.com/nuget": {}
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Domain\\Controle.Sales.Domain.csproj": {
+                "projectPath": "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Domain\\Controle.Sales.Domain.csproj"
+              },
+              "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Infra.Crosscuting\\Controle.Sales.Infra.Crosscuting.csproj": {
+                "projectPath": "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Infra.Crosscuting\\Controle.Sales.Infra.Crosscuting.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[2.11.0-beta1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Domain\\Controle.Sales.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Domain\\Controle.Sales.Domain.csproj",
+        "projectName": "Controle.Sales.Domain",
+        "projectPath": "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Domain\\Controle.Sales.Domain.csproj",
+        "packagesPath": "C:\\Users\\Ramirez\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ramirez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[2.11.0-beta1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Infra.Crosscuting\\Controle.Sales.Infra.Crosscuting.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Infra.Crosscuting\\Controle.Sales.Infra.Crosscuting.csproj",
+        "projectName": "Controle.Sales.Infra.Crosscuting",
+        "projectPath": "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Infra.Crosscuting\\Controle.Sales.Infra.Crosscuting.csproj",
+        "packagesPath": "C:\\Users\\Ramirez\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Infra.Crosscuting\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ramirez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Infra.Data\\Controle.Sales.Infra.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Infra.Data\\Controle.Sales.Infra.Data.csproj",
+        "projectName": "Controle.Sales.Infra.Data",
+        "projectPath": "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Infra.Data\\Controle.Sales.Infra.Data.csproj",
+        "packagesPath": "C:\\Users\\Ramirez\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Infra.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ramirez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
@@ -80,200 +269,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Application\\Controle.Sales.Application.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Application\\Controle.Sales.Application.csproj",
-        "projectName": "Controle.Sales.Application",
-        "projectPath": "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Application\\Controle.Sales.Application.csproj",
-        "packagesPath": "C:\\Users\\Ramirez\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Application\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\Ramirez\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp3.1"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.telerik.com/nuget": {}
-        },
-        "frameworks": {
-          "netcoreapp3.1": {
-            "projectReferences": {
-              "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Domain\\Controle.Sales.Domain.csproj": {
-                "projectPath": "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Domain\\Controle.Sales.Domain.csproj"
-              },
-              "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Infra.Crosscuting\\Controle.Sales.Infra.Crosscuting.csproj": {
-                "projectPath": "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Infra.Crosscuting\\Controle.Sales.Infra.Crosscuting.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp3.1": {
-          "dependencies": {
-            "MongoDB.Bson": {
-              "target": "Package",
-              "version": "[2.11.0-beta1, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Domain\\Controle.Sales.Domain.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Domain\\Controle.Sales.Domain.csproj",
-        "projectName": "Controle.Sales.Domain",
-        "projectPath": "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Domain\\Controle.Sales.Domain.csproj",
-        "packagesPath": "C:\\Users\\Ramirez\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Domain\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\Ramirez\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp3.1"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.telerik.com/nuget": {}
-        },
-        "frameworks": {
-          "netcoreapp3.1": {
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp3.1": {
-          "dependencies": {
-            "MongoDB.Bson": {
-              "target": "Package",
-              "version": "[2.11.0-beta1, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Infra.Crosscuting\\Controle.Sales.Infra.Crosscuting.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Infra.Crosscuting\\Controle.Sales.Infra.Crosscuting.csproj",
-        "projectName": "Controle.Sales.Infra.Crosscuting",
-        "projectPath": "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Infra.Crosscuting\\Controle.Sales.Infra.Crosscuting.csproj",
-        "packagesPath": "C:\\Users\\Ramirez\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Infra.Crosscuting\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\Ramirez\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp3.1"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.telerik.com/nuget": {}
-        },
-        "frameworks": {
-          "netcoreapp3.1": {
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp3.1": {
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -300,20 +296,19 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.telerik.com/nuget": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Console.Sales.Infra.Data\\Controle.Sales.Infra.Data.csproj": {
-                "projectPath": "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Console.Sales.Infra.Data\\Controle.Sales.Infra.Data.csproj"
-              },
               "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Application\\Controle.Sales.Application.csproj": {
                 "projectPath": "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Application\\Controle.Sales.Application.csproj"
               },
               "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Domain\\Controle.Sales.Domain.csproj": {
                 "projectPath": "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Domain\\Controle.Sales.Domain.csproj"
+              },
+              "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Infra.Data\\Controle.Sales.Infra.Data.csproj": {
+                "projectPath": "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Infra.Data\\Controle.Sales.Infra.Data.csproj"
               }
             }
           }
@@ -351,7 +346,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

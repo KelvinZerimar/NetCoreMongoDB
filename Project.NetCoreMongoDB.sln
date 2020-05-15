@@ -31,7 +31,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.2 Crosscutting", "5.2 Cro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controle.Sales.Infra.Crosscuting", "Controle.Sales.Infra.Crosscuting\Controle.Sales.Infra.Crosscuting.csproj", "{20559498-ED7F-4549-9CFD-BFD1667A5F42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controle.Sales.Infra.Data", "Console.Sales.Infra.Data\Controle.Sales.Infra.Data.csproj", "{52405E9C-BC92-4B6C-B907-EB16A4A6E1A3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controle.Sales.Infra.Data", "Controle.Sales.Infra.Data\Controle.Sales.Infra.Data.csproj", "{52405E9C-BC92-4B6C-B907-EB16A4A6E1A3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controle.Sales.Infra.Ioc", "Controle.Sales.Infra.Ioc\Controle.Sales.Infra.Ioc.csproj", "{9EC43598-02BA-4860-B84D-0F2331C17A34}"
 EndProject

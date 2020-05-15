@@ -1524,8 +1524,8 @@
     },
     "Controle.Sales.Infra.Data/1.0.0": {
       "type": "project",
-      "path": "../Console.Sales.Infra.Data/Controle.Sales.Infra.Data.csproj",
-      "msbuildProject": "../Console.Sales.Infra.Data/Controle.Sales.Infra.Data.csproj"
+      "path": "../Controle.Sales.Infra.Data/Controle.Sales.Infra.Data.csproj",
+      "msbuildProject": "../Controle.Sales.Infra.Data/Controle.Sales.Infra.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1565,20 +1565,19 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://nuget.telerik.com/nuget": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Console.Sales.Infra.Data\\Controle.Sales.Infra.Data.csproj": {
-              "projectPath": "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Console.Sales.Infra.Data\\Controle.Sales.Infra.Data.csproj"
-            },
             "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Application\\Controle.Sales.Application.csproj": {
               "projectPath": "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Application\\Controle.Sales.Application.csproj"
             },
             "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Domain\\Controle.Sales.Domain.csproj": {
               "projectPath": "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Domain\\Controle.Sales.Domain.csproj"
+            },
+            "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Infra.Data\\Controle.Sales.Infra.Data.csproj": {
+              "projectPath": "C:\\Users\\Ramirez\\source\\repos\\Project.NetCoreMongoDB\\Controle.Sales.Infra.Data\\Controle.Sales.Infra.Data.csproj"
             }
           }
         }
@@ -1616,7 +1615,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

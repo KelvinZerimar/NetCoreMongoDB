@@ -4713,8 +4713,8 @@
     },
     "Controle.Sales.Infra.Data/1.0.0": {
       "type": "project",
-      "path": "../Console.Sales.Infra.Data/Controle.Sales.Infra.Data.csproj",
-      "msbuildProject": "../Console.Sales.Infra.Data/Controle.Sales.Infra.Data.csproj"
+      "path": "../Controle.Sales.Infra.Data/Controle.Sales.Infra.Data.csproj",
+      "msbuildProject": "../Controle.Sales.Infra.Data/Controle.Sales.Infra.Data.csproj"
     },
     "Controle.Sales.Infra.Ioc/1.0.0": {
       "type": "project",
@@ -4758,8 +4758,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://nuget.telerik.com/nuget": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
@@ -4809,7 +4808,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -11,3 +11,4 @@ C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.Application\
 C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.Application\obj\Debug\netcoreapp3.1\Controle.Sales.Application.csproj.CopyComplete
 C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.Application\obj\Debug\netcoreapp3.1\Controle.Sales.Application.dll
 C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.Application\obj\Debug\netcoreapp3.1\Controle.Sales.Application.pdb
+C:\Users\Ramirez\source\repos\Project.NetCoreMongoDB\Controle.Sales.Application\obj\Debug\netcoreapp3.1\Controle.Sales.Application.csproj.CoreCompileInputs.cache
