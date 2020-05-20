@@ -10,8 +10,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Controle.Sales.Application\Controle.Sales.Application.csproj" />
-    <ProjectReference Include="..\Controle.Sales.Infra.Ioc\Controle.Sales.Infra.Ioc.csproj" />
+    <ProjectReference Include="..\Controle.Sales.Application\Application.App.csproj" />
+    <ProjectReference Include="..\Controle.Sales.Infra.Ioc\Infra.Ioc.csproj" />
   </ItemGroup>
 
 

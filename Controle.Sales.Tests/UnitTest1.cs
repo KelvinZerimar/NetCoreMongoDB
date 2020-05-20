@@ -1,7 +1,6 @@
-using System;
 using Xunit;
 
-namespace Controle.Sales.Tests
+namespace Tests
 {
     public class UnitTest1
     {

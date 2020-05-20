@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Controle.Sales.Application.Commands
+namespace Application.App.Commands
 {
     public class SalesCommand
     {

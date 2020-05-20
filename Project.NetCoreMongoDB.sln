@@ -15,25 +15,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6-Test", "6-Test", "{20E858
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-Domain", "4-Domain", "{DF2C208B-0192-4992-AB8B-85B22D648C29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controle.Sales.Fronted", "Controle.Sales.Fronted\Controle.Sales.Fronted.csproj", "{99B19496-86A2-4037-B279-849D2F06E15A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Controle.Sales.Fronted", "Controle.Sales.Fronted\Controle.Sales.Fronted.csproj", "{99B19496-86A2-4037-B279-849D2F06E15A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controle.Sales.API", "Controle.Sales.API\Controle.Sales.API.csproj", "{45CB4F9A-7432-4EB1-9B27-4AB541770B49}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service.WebApi", "Controle.Sales.API\Service.WebApi.csproj", "{45CB4F9A-7432-4EB1-9B27-4AB541770B49}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controle.Sales.Application", "Controle.Sales.Application\Controle.Sales.Application.csproj", "{0B7597D3-0DE2-483B-A7AD-D6A80DCBA4DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.App", "Controle.Sales.Application\Application.App.csproj", "{0B7597D3-0DE2-483B-A7AD-D6A80DCBA4DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controle.Sales.Domain", "Controle.Sales.Domain\Controle.Sales.Domain.csproj", "{C5168E1F-7E46-4C33-9512-5657D8CA2AF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Controle.Sales.Domain\Domain.csproj", "{C5168E1F-7E46-4C33-9512-5657D8CA2AF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controle.Sales.Tests", "Controle.Sales.Tests\Controle.Sales.Tests.csproj", "{6719B985-74FD-4C9B-B63A-634B43C9D81E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Controle.Sales.Tests\Tests.csproj", "{6719B985-74FD-4C9B-B63A-634B43C9D81E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.1 Data", "5.1 Data", "{12F454A7-E7D1-43EB-B417-51F8E0458BA7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.2 Crosscutting", "5.2 Crosscutting", "{2B64B80E-7D07-4D3C-9A7B-334AF8253C22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controle.Sales.Infra.Crosscuting", "Controle.Sales.Infra.Crosscuting\Controle.Sales.Infra.Crosscuting.csproj", "{20559498-ED7F-4549-9CFD-BFD1667A5F42}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infra.Cross", "Controle.Sales.Infra.Crosscuting\Infra.Cross.csproj", "{20559498-ED7F-4549-9CFD-BFD1667A5F42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controle.Sales.Infra.Data", "Controle.Sales.Infra.Data\Controle.Sales.Infra.Data.csproj", "{52405E9C-BC92-4B6C-B907-EB16A4A6E1A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infra.Data", "Controle.Sales.Infra.Data\Infra.Data.csproj", "{52405E9C-BC92-4B6C-B907-EB16A4A6E1A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controle.Sales.Infra.Ioc", "Controle.Sales.Infra.Ioc\Controle.Sales.Infra.Ioc.csproj", "{9EC43598-02BA-4860-B84D-0F2331C17A34}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infra.Ioc", "Controle.Sales.Infra.Ioc\Infra.Ioc.csproj", "{9EC43598-02BA-4860-B84D-0F2331C17A34}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

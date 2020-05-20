@@ -1,10 +1,10 @@
-﻿using Controle.Sales.Application.Interfaces;
-using Controle.Sales.Application.Services;
-using Controle.Sales.Domain.Interfaces;
-using Controle.Sales.Infra.Data.Repository;
+﻿using Application.App.Interfaces;
+using Application.App.Services;
+using Domain.Interfaces;
+using Infra.Data.Repository;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Controle.Sales.Infra.Ioc
+namespace Infra.Ioc
 {
     public class SimpleInjectorBootStrapper
     {

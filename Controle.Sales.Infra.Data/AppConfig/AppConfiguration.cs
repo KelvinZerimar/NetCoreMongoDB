@@ -1,15 +1,15 @@
-﻿using Microsoft.Extensions.Configuration;
-using System;
+﻿using System;
+using Microsoft.Extensions.Configuration;
 
-namespace Controle.Sales.Infra.Data.AppConfig
+namespace Infra.Data.AppConfig
 {
     public static class AppConfiguration
     {
-        private static IConfiguration currentConfig;
+        private static IConfiguration _currentConfig;
 
         public static void SetConfig(IConfiguration configuration)
         {
-            currentConfig = configuration;
+            _currentConfig = configuration;
         }
 
 
@@ -17,7 +17,7 @@ namespace Controle.Sales.Infra.Data.AppConfig
         {
             try
             {
-                string connectionString = currentConfig.GetConnectionString(configKey);
+                string connectionString = _currentConfig.GetConnectionString(configKey);
                 return connectionString;
             }
             catch (Exception ex)

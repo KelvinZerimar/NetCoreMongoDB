@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using Controle.Sales.Domain.DomainEntities ;
+using Domain.DomainEntities;
 using MongoDB.Bson;
 
-namespace Controle.Sales.Domain.Interfaces
+namespace Domain.Interfaces
 {
     public interface ISaleRepository
     {

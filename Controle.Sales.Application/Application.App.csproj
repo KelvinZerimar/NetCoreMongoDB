@@ -10,8 +10,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Controle.Sales.Domain\Controle.Sales.Domain.csproj" />
-    <ProjectReference Include="..\Controle.Sales.Infra.Crosscuting\Controle.Sales.Infra.Crosscuting.csproj" />
+    <ProjectReference Include="..\Controle.Sales.Domain\Domain.csproj" />
+    <ProjectReference Include="..\Controle.Sales.Infra.Crosscuting\Infra.Cross.csproj" />
   </ItemGroup>
 
 </Project>
