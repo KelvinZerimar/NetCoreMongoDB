@@ -1,6 +1,6 @@
 using System;
 
-namespace Controle.Sales.API
+namespace Service.WebApi
 {
     public class WeatherForecast
     {

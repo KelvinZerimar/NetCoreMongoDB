@@ -1,6 +1,8 @@
+using System;
+using System.IO.Compression;
 using AutoMapper;
-using Controle.Sales.Infra.Data.AppConfig;
-using Controle.Sales.Infra.Ioc;
+using Infra.Data.AppConfig;
+using Infra.Ioc;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -10,10 +12,8 @@ using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
-using System.IO.Compression;
 
-namespace Controle.Sales.API
+namespace Service.WebApi
 {
     public class Startup
     {
@@ -50,7 +50,7 @@ namespace Controle.Sales.API
                     // find out which status code to use
                     var actionExecutingContext =
                           context as Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext;
-                    // if there are modelstate errors & all keys were correctly
+                    // if there are model-state errors & all keys were correctly
                     // found/parsed we're dealing with validation errors
                     if ((context.ModelState.ErrorCount > 0) &&
                         (actionExecutingContext?.ActionArguments.Count == context.ActionDescriptor.Parameters.Count))
@@ -66,7 +66,7 @@ namespace Controle.Sales.API
                     }
 
                     // if one of the keys wasn't correctly found / couldn't be parsed
-                    // we're dealing with null/unparsable input
+                    // we're dealing with null/parseable input
                     problemDetails.Status = StatusCodes.Status400BadRequest;
                     problemDetails.Title = "One or more errors on input occurred.";
                     return new BadRequestObjectResult(problemDetails)

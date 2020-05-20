@@ -1,14 +1,13 @@
-﻿using Controle.Sales.Domain.DomainEntities;
-using Controle.Sales.Domain.Interfaces;
+﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using Infra.Data;
+using Domain.DomainEntities;
+using Domain.Interfaces;
 using MongoDB.Bson;
 using MongoDB.Driver;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Controle.Sales.Infra.Data.Repository
+namespace Infra.Data.Repository
 {
     public class SalesRepository : ISaleRepository
     {

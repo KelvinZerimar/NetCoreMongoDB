@@ -1,16 +1,15 @@
-﻿using Controle.Sales.Application.Commands;
-using Controle.Sales.Application.Interfaces;
-using Controle.Sales.Domain.Interfaces;
-using Controle.Sales.Domain.DomainEntities;
-using Controle.Sales.Infra.Crosscuting.AssertionConcern;
-using MongoDB.Bson;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using AutoMapper;
 using System.Threading.Tasks;
+using Application.App.Commands;
+using Application.App.Interfaces;
+using AutoMapper;
+using Domain.DomainEntities;
+using Domain.Interfaces;
+using Infra.Cross.AssertionConcern;
+using MongoDB.Bson;
 
-
-namespace Controle.Sales.Application.Services
+namespace Application.App.Services
 {
     public class SalesAppService: ISalesAppService
     {

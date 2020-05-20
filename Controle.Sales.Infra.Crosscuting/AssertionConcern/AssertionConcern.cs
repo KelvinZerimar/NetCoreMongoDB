@@ -1,10 +1,8 @@
-﻿using Controle.Sales.Infra.Crosscuting.Exception;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System;
 using System.Text.RegularExpressions;
+using Infra.Cross.Exception;
 
-namespace Controle.Sales.Infra.Crosscuting.AssertionConcern
+namespace Infra.Cross.AssertionConcern
 {
     public class AssertionConcern
     {

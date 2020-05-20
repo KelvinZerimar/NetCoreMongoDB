@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Controle.Sales.Infra.Crosscuting.Exception
+﻿namespace Infra.Cross.Exception
 {
     public class DomainException : System.Exception
     {

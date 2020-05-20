@@ -1,10 +1,10 @@
-﻿using Controle.Sales.Application.Commands;
-using Controle.Sales.Domain.DomainEntities;
-using MongoDB.Bson;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using Application.App.Commands;
+using Domain.DomainEntities;
+using MongoDB.Bson;
 
-namespace Controle.Sales.Application.Interfaces
+namespace Application.App.Interfaces
 {
     public interface ISalesAppService
     {

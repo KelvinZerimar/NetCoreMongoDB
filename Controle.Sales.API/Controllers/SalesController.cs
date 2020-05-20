@@ -1,13 +1,13 @@
 ﻿using AutoMapper;
 using System.Collections.Generic;
-using Controle.Sales.Application.Interfaces;
-using Controle.Sales.Application.Models;
-using Controle.Sales.Application.Commands;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Threading.Tasks;
+using Application.App.Commands;
+using Application.App.Interfaces;
+using Application.App.Models;
 
-namespace Controle.Sales.API.Controllers
+namespace Service.WebApi.Controllers
 {
     [Route("api/sales")]
     [ApiController]
@@ -57,7 +57,7 @@ namespace Controle.Sales.API.Controllers
             {
                 await _appService.Create(model);
 
-                return Ok("Insert sucess!!!...");
+                return Ok("Insert OK.");
             }
             catch (Exception e)
             {
@@ -66,7 +66,7 @@ namespace Controle.Sales.API.Controllers
         }
 
         /// <summary>
-        /// Carga masiva from file csv
+        /// Cargo massive from file csv
         /// </summary>
         private void Bulk()
         {

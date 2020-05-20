@@ -10,9 +10,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Controle.Sales.Application\Controle.Sales.Application.csproj" />
-    <ProjectReference Include="..\Controle.Sales.Domain\Controle.Sales.Domain.csproj" />
-    <ProjectReference Include="..\Controle.Sales.Infra.Data\Controle.Sales.Infra.Data.csproj" />
+    <ProjectReference Include="..\Controle.Sales.Application\Application.App.csproj" />
+    <ProjectReference Include="..\Controle.Sales.Domain\Domain.csproj" />
+    <ProjectReference Include="..\Controle.Sales.Infra.Data\Infra.Data.csproj" />
   </ItemGroup>
 
 </Project>

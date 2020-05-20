@@ -1,9 +1,9 @@
-﻿using MongoDB.Bson;
+﻿using System;
+using MongoDB.Bson;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using System;
 
-namespace Controle.Sales.Domain.DomainEntities
+namespace Domain.DomainEntities
 {
     public class ObjectIdConverter : JsonConverter
     {

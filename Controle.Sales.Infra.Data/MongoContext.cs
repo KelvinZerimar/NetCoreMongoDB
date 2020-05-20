@@ -1,9 +1,8 @@
-﻿using Controle.Sales.Domain.DomainEntities;
-using Controle.Sales.Infra.Data.AppConfig;
+﻿using Infra.Data.AppConfig;
+using Domain.DomainEntities;
 using MongoDB.Driver;
 
-
-namespace Controle.Sales.Infra.Data
+namespace Infra.Data
 {
     public class MongoContext
     {
@@ -11,9 +10,7 @@ namespace Controle.Sales.Infra.Data
         //private readonly IMongoDatabase database;
         //public IConfigurationRoot Configuration { get; }
 
-        private string _connectionStrings = string.Empty;
-        private string _databaseName = string.Empty;
-        private string _collectionName = string.Empty;
+        private readonly string _collectionName;
 
         private readonly IMongoClient _client;
         private readonly IMongoDatabase _database;
@@ -25,31 +22,18 @@ namespace Controle.Sales.Infra.Data
 
             //---> Call API mongo Azure
             this._collectionName = strCollectionName;
-            this._connectionStrings = AppConfiguration.GetConfiguration("ServerName");
-            this._databaseName = AppConfiguration.GetConfiguration("DatabaseName");
-            this._client = new MongoClient(_connectionStrings);
-            this._database = _client.GetDatabase(_databaseName);
+            this._client = new MongoClient(AppConfiguration.GetConfiguration("ServerName"));
+            this._database = _client.GetDatabase(AppConfiguration.GetConfiguration("DatabaseName"));
 
         }
 
-        public IMongoClient Client
-        {
-            get { return _client; }
-        }
+        public IMongoClient Client => _client;
 
-        public IMongoDatabase Database
-        {
-            get { return _database; }
-        }
+        public IMongoDatabase Database => _database;
 
-        public IMongoCollection<Sale> Sales
-        {
-            get
-            {
-                //return database.GetCollection<Sale>("collection_Sale"); 
-                return _database.GetCollection<Sale>(_collectionName);
-            }
-        }
+        public IMongoCollection<Sale> Sales =>
+            //return database.GetCollection<Sale>("collection_Sale"); 
+            _database.GetCollection<Sale>(_collectionName);
     }
 }
 
