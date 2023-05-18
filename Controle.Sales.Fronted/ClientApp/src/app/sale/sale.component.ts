@@ -18,7 +18,7 @@ export class SaleComponent implements OnInit {
     this.service.getListValues().subscribe(
       result => {
         this.sales = result;
-        // console.log(this.sales);
+        console.log(this.sales);
       },
       err => {
         console.log(err);

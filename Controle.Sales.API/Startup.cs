@@ -1,6 +1,5 @@
-using System;
-using System.IO.Compression;
 using AutoMapper;
+using FluentValidation.AspNetCore;
 using Infra.Data.AppConfig;
 using Infra.Ioc;
 using Microsoft.AspNetCore.Builder;
@@ -12,6 +11,8 @@ using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System;
+using System.IO.Compression;
 
 namespace Service.WebApi
 {
@@ -25,6 +26,7 @@ namespace Service.WebApi
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
+        [Obsolete]
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddCors();
@@ -79,7 +81,11 @@ namespace Service.WebApi
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
             //Configure MVC
-            services.AddMvc();
+            services.AddMvc(opt =>
+            {
+                opt.Filters.Add(typeof(ValidatorActionFilter));
+            }).AddFluentValidation(fvc => fvc.RegisterValidatorsFromAssemblyContaining<Startup>());
+
             // .NET Native DI Abstraction
             RegisterService(services);
 
