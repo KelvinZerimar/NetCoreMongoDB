@@ -1,13 +1,14 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-using Application.App.Commands;
+﻿using Application.App.Commands;
 using Domain.DomainEntities;
 using MongoDB.Bson;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Application.App.Interfaces
 {
     public interface ISalesAppService
     {
+        Task<long> GetCountAll();
         Task<IEnumerable<Sale>> GetAll(int skip, int limit);
         Task Create(SalesCommand obj);
 
@@ -17,5 +18,6 @@ namespace Application.App.Interfaces
 
         //Sale GetById(ObjectId id);
         Task<Sale> GetById(string id);
+        Task<IEnumerable<Sale>> GetCountry(string texto);
     }
 }

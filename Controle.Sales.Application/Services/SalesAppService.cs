@@ -1,17 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using Application.App.Commands;
+﻿using Application.App.Commands;
 using Application.App.Interfaces;
 using AutoMapper;
 using Domain.DomainEntities;
 using Domain.Interfaces;
 using Infra.Cross.AssertionConcern;
 using MongoDB.Bson;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Application.App.Services
 {
-    public class SalesAppService: ISalesAppService
+    public class SalesAppService : ISalesAppService
     {
         private readonly ISaleRepository _repository;
         private readonly IMapper _mapper;
@@ -34,6 +34,11 @@ namespace Application.App.Services
             throw new NotImplementedException();
         }
 
+        public async Task<long> GetCountAll()
+        {
+            return await _repository.GetCountAll();
+        }
+
         public async Task<IEnumerable<Sale>> GetAll(int skip, int limit)
         {
             return await _repository.GetAll(skip, limit);
@@ -45,6 +50,14 @@ namespace Application.App.Services
             AssertionConcern.AssertArgumentNotNull(id, "La identificación no puede estar vacía");
 
             return await _repository.GetById(id);
+        }
+
+        public async Task<IEnumerable<Sale>> GetCountry(string texto)
+        {
+            //Validation
+            AssertionConcern.AssertArgumentNotNull(texto, "El texto no puede estar vacía");
+
+            return await _repository.GetCountry(texto);
         }
 
         public void Update(SalesCommand obj)
