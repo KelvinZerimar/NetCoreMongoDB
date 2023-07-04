@@ -1,11 +1,11 @@
-﻿using AutoMapper;
-using System.Collections.Generic;
-using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Threading.Tasks;
-using Application.App.Commands;
+﻿using Application.App.Commands;
 using Application.App.Interfaces;
 using Application.App.Models;
+using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
+using Service.WebApi.Validators;
+using System;
+using System.Threading.Tasks;
 
 namespace Service.WebApi.Controllers
 {
@@ -27,18 +27,25 @@ namespace Service.WebApi.Controllers
         // GET: api/sales
         [HttpGet]
         [HttpHead]
-        public async Task<ActionResult<IEnumerable<SalesDto>>> GetSales(int skip = 0, int limit = 50)
+        public async Task<ActionResult> GetSales(int param, int skip = 0, int limit = 20)
         {
             var salesFromRepo = await _appService.GetAll(skip, limit);
-            return Ok(_mapper.Map<IEnumerable<SalesDto>>(salesFromRepo));
+            //
+            var req = Request.Headers;
+            var req2 = Request.Body;
+            var paginationMetadata = await _appService.GetCountAll();
+            Response.Headers.Add("X-Pagination", paginationMetadata.ToString());
+
+            //return Ok(_mapper.Map<IEnumerable<SalesDto>>(salesFromRepo));
             //return Ok(await _appService.GetAll(skip, limit));
+            return Ok(salesFromRepo);
         }
 
-        // GET: api/sales/Id
-        [HttpGet("{salesId}", Name = "GetSale")]
+        // GET: api/sales/salesId/GetSale
+        [HttpGet("{salesId}/GetSale", Name = "GetSale")]
         public async Task<IActionResult> GetSale(string salesId)
         {
-           // var salesFromRepo = _appService.GetById(ObjectId.Parse(salesId));
+            //var salesFromRepo1 = _appService.GetById(ObjectId.Parse(salesId));
             var salesFromRepo = await _appService.GetById(salesId);
 
             if (salesFromRepo == null)
@@ -49,12 +56,33 @@ namespace Service.WebApi.Controllers
             return Ok(_mapper.Map<SalesDto>(salesFromRepo));
         }
 
+        // GET: api/sales/texto
+        [HttpGet("{texto}/GetCountry", Name = "GetCountry")]
+        public async Task<IActionResult> GetCountry(string texto)
+        {
+            var salesFromRepo = await _appService.GetCountry(texto);
+            /*if (salesFromRepo.Count() == 0)
+            {
+                return NotFound();
+            }*/
+
+            //return Ok(_mapper.Map<IEnumerable<SalesDto>>(salesFromRepo));
+            return Ok(salesFromRepo);
+        }
+
         // POST api/sales
         [HttpPost]
-        public async Task<IActionResult> Post(SalesCommand model)
+        public async Task<IActionResult> Post([FromBody] SalesCommand model)
         {
             try
             {
+                var validator = new SalesValidator();
+                var validationResult = validator.Validate(model);
+                if (validationResult.IsValid == false)
+                {
+                    return BadRequest(validationResult.Errors[0].ErrorMessage);
+                }
+
                 await _appService.Create(model);
 
                 return Ok("Insert OK.");

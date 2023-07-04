@@ -22,19 +22,35 @@ namespace Infra.Data.Repository
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public async Task<long> GetCountAll()
+        {
+            return await _mongoContext.Sales.CountDocumentsAsync(FilterDefinition<Sale>.Empty);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="skip"></param>
+        /// <param name="limit"></param>
+        /// <returns></returns>
         public async Task<IEnumerable<Sale>> GetAll(int skip, int limit)
         {
             return await _mongoContext.Sales.Find(x => true).Skip(skip).Limit(limit).ToListAsync();
 
-            //IEnumerable<Sale> sales = null;
-            //using (IAsyncCursor<Sale> cursor = await this._mongoContext.Sales.FindAsync(new BsonDocument()))
-            //{
-            //    while (await cursor.MoveNextAsync())
-            //    {
-            //        sales = cursor.Current;
-            //    }
-            //}
-            //return sales;
+            /*
+            IEnumerable<Sale> sales = null;
+            using (IAsyncCursor<Sale> cursor = await this._mongoContext.Sales.FindAsync(new BsonDocument()))
+            {
+                while (await cursor.MoveNextAsync())
+                {
+                    sales = cursor.Current;
+                }
+            }
+            return sales;*/
         }
 
         public async Task<Sale> GetById(string id)

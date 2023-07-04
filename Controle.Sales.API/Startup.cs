@@ -1,4 +1,5 @@
 using AutoMapper;
+using FluentValidation.AspNetCore;
 using Infra.Data.AppConfig;
 using Infra.Ioc;
 using Microsoft.AspNetCore.Builder;
@@ -26,6 +27,7 @@ namespace Service.WebApi
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
+        [Obsolete]
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddCors();
@@ -81,7 +83,11 @@ namespace Service.WebApi
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
             //Configure MVC
-            services.AddMvc();
+            services.AddMvc(opt =>
+            {
+                opt.Filters.Add(typeof(ValidatorActionFilter));
+            }).AddFluentValidation(fvc => fvc.RegisterValidatorsFromAssemblyContaining<Startup>());
+
             // .NET Native DI Abstraction
             RegisterService(services);
 
