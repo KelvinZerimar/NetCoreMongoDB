@@ -87,5 +87,10 @@ namespace Infra.Data.Repository
         {
             // _mongoContext.Sales.ReplaceOne(x => x.Id.Equals(entity.Id), entity);
         }
+
+        public Task<IEnumerable<Sale>> GetCountry(string texto)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
