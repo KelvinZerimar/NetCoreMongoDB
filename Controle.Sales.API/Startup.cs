@@ -1,5 +1,3 @@
-using System;
-using System.IO.Compression;
 using AutoMapper;
 using Infra.Data.AppConfig;
 using Infra.Ioc;
@@ -12,6 +10,9 @@ using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.OpenApi.Models;
+using System;
+using System.IO.Compression;
 
 namespace Service.WebApi
 {
@@ -28,6 +29,7 @@ namespace Service.WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddCors();
+            AddSwagger(services);
 
             services.AddControllers(setupAction =>
             {
@@ -93,8 +95,6 @@ namespace Service.WebApi
             {
                 options.Level = CompressionLevel.Fastest;
             });
-
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -119,7 +119,11 @@ namespace Service.WebApi
                 });
 
             }
-
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "KR API V1");
+            });
             app.UseRouting();
 
             app.UseAuthorization();
@@ -137,6 +141,27 @@ namespace Service.WebApi
         {
             // Adding dependencies from another layers (isolated from Service)
             SimpleInjectorBootStrapper.RegisterService(services);
+        }
+
+        private void AddSwagger(IServiceCollection services)
+        {
+            services.AddSwaggerGen(options =>
+            {
+                var groupName = "v1";
+
+                options.SwaggerDoc(groupName, new OpenApiInfo
+                {
+                    Title = $"KR {groupName}",
+                    Version = groupName,
+                    Description = "KR API",
+                    Contact = new OpenApiContact
+                    {
+                        Name = "KR Company",
+                        Email = string.Empty,
+                        Url = new Uri("https://foo.com/"),
+                    }
+                });
+            });
         }
     }
 }

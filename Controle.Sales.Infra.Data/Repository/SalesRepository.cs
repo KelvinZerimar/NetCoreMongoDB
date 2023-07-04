@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using Infra.Data;
-using Domain.DomainEntities;
+﻿using Domain.DomainEntities;
 using Domain.Interfaces;
 using MongoDB.Bson;
 using MongoDB.Driver;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Infra.Data.Repository
 {
@@ -40,12 +39,13 @@ namespace Infra.Data.Repository
 
         public async Task<Sale> GetById(string id)
         {
-            return await this._mongoContext.Sales.Find(Builders<Sale>.Filter.Eq("_id", ObjectId.Parse(id)))
-                .FirstOrDefaultAsync();
+            //return await this._mongoContext.Sales.Find(Builders<Sale>.Filter.Eq("_id", ObjectId.Parse(id)))
+            //    .FirstOrDefaultAsync();
 
-            //return _mongoContext.Sales.Find(x => x.ObjectId.Equals(id)).FirstAsync();
+            var resp = await _mongoContext.Sales.Find(x => x.OrderID.Equals(id)).FirstAsync();
+            return resp;
 
-            //FilterDefinition<Sale> filter = Builders<Sale>.Filter.Eq("_id", ObjectId.Parse(id));
+            //FilterDefinition<Sale> filter = Builders<Sale>.Filter.Eq("OrderID", ObjectId.Parse(id));
             //IEnumerable<Sale> entity = null;
             //using (IAsyncCursor<Sale> cursor = await this._mongoContext.Sales.FindAsync(filter))
             //{
@@ -69,7 +69,7 @@ namespace Infra.Data.Repository
 
         public void Update(Sale entity)
         {
-           // _mongoContext.Sales.ReplaceOne(x => x.Id.Equals(entity.Id), entity);
+            // _mongoContext.Sales.ReplaceOne(x => x.Id.Equals(entity.Id), entity);
         }
     }
 }
