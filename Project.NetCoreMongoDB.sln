@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29709.97
+# Visual Studio Version 18
+VisualStudioVersion = 18.3.11520.95 d18.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Fronted", "1-Fronted", "{00A28DE6-5E3C-4E2C-BC44-DF417857993F}"
 EndProject
@@ -14,8 +14,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6-Test", "6-Test", "{20E85816-667C-4D84-B0F8-8FC7CE2FBB4C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-Domain", "4-Domain", "{DF2C208B-0192-4992-AB8B-85B22D648C29}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controle.Sales.Fronted", "Controle.Sales.Fronted\Controle.Sales.Fronted.csproj", "{99B19496-86A2-4037-B279-849D2F06E15A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controle.Sales.API", "Controle.Sales.API\Controle.Sales.API.csproj", "{45CB4F9A-7432-4EB1-9B27-4AB541770B49}"
 EndProject
@@ -41,10 +39,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{99B19496-86A2-4037-B279-849D2F06E15A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{99B19496-86A2-4037-B279-849D2F06E15A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{99B19496-86A2-4037-B279-849D2F06E15A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{99B19496-86A2-4037-B279-849D2F06E15A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{45CB4F9A-7432-4EB1-9B27-4AB541770B49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{45CB4F9A-7432-4EB1-9B27-4AB541770B49}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45CB4F9A-7432-4EB1-9B27-4AB541770B49}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -78,7 +72,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{99B19496-86A2-4037-B279-849D2F06E15A} = {00A28DE6-5E3C-4E2C-BC44-DF417857993F}
 		{45CB4F9A-7432-4EB1-9B27-4AB541770B49} = {1C7E2487-AC5E-4856-88F0-5CD318E92DE7}
 		{0B7597D3-0DE2-483B-A7AD-D6A80DCBA4DC} = {7C24C0E6-033F-4174-89C5-DF4FC31C17DB}
 		{C5168E1F-7E46-4C33-9512-5657D8CA2AF9} = {DF2C208B-0192-4992-AB8B-85B22D648C29}
